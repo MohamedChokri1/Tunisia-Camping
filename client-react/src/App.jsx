@@ -43,6 +43,7 @@ function App() {
 
 
   const handleClick = (product) => {
+
     navigate(`/one/${product.name}`, { state: product });
   };
 
@@ -54,9 +55,9 @@ function App() {
        
          <Routes>
          <Route path='/' element={<GeneralHome handleClick={handleClick}  />} />
-           <Route path="/AdminPage" element={<AdminPage />}/>
+    
          <Route path="/AdminPage" element={<AdminPage />}/>
-         <Route path="/Seller" element={<SellerHome products={products} showProduct={showProduct}/>} />
+         <Route path="/Seller" element={<SellerHome products={products} showProduct={showProduct}b/>} />
           <Route path='/login' element={ <Login/> } />
           <Route path='/register' element={ <Register/> } />
            <Route path='/addProduct' element={<CreateProduct refresh={refresh} setRefresh={setRefresh}/>} />

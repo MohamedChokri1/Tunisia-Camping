@@ -32,7 +32,6 @@ app.use("/seller", SellerRoute);
 app.use("/wishList", WishListRoute);
 
 
-app.use("/cart",translateRouteCart)
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);

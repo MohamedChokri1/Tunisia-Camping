@@ -15,7 +15,7 @@ const [img,setImg]=useState('')
 const location = useLocation();
   const product = location.state
 
-
+  console.log(product)
 
   return (
     <div>
@@ -26,9 +26,9 @@ const location = useLocation();
         <div className="ProductDetails_gallery">
           <div className="vertical_gallery">
             <img onClick={()=>{setImg(product.images[0].url)}} src={product.images[0].url} alt="" />
-            <img onClick={()=>{setImg(product.images[1].url)}} src={product.images[1].url}alt="" />
+            {/* <img onClick={()=>{setImg(product.images[1].url)}} src={product.images[1].url}alt="" />
             <img onClick={()=>{setImg(product.images[2].url)}} src={product.images[2].url} alt="" />
-            <img  onClick={()=>{setImg(product.images[3].url)}} src={product.images[3].url} alt="" />
+            <img  onClick={()=>{setImg(product.images[3].url)}} src={product.images[3].url} alt="" /> */}
           </div>
           <div className="main_product">
             <img src={img? img :product.images[0].url} alt="" />
